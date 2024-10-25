@@ -21,7 +21,16 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.orange,
-      child: Text('Hello')
+     padding: const EdgeInsets.all(10),
+     margin: const EdgeInsets.only(left:50),
+      child: Text('Hello',
+      style: TextStyle(
+        fontSize: 18,
+        letterSpacing: 4,
+        decoration: TextDecoration.underline,
+        fontStyle: FontStyle.italic
+      ),
+      ),
     );
   }
 }
